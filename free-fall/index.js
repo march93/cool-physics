@@ -118,7 +118,7 @@ function update_g(value) {
 }
 
 function update_dt(value) {
-    dt_slider.MaterialSlider.change(value);
+    dt_slider.value = value;
     dt_spin.value = value;
     dt = value / 10000;
 }
