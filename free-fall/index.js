@@ -112,7 +112,7 @@ function update_u(value) {
 }
 
 function update_g(value) {
-    g_slider.MaterialSlider.change(value);
+    g_slider.value = value;
     g_spin.value = value;
     g = value;
 }
