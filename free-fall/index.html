@@ -13,7 +13,7 @@
     .property {
       margin: 10px;
       font-size: 1.5em;
-      width: 2em;
+      width: 3em;
     }
     .property-value {
       font-size: 1.2em;
@@ -80,7 +80,7 @@
           <span class="mdl-list__item-sub-title">Coefficient of restitution</span>
           <span class="property">e</span>
           <span class="property-value">
-            <input id="e-slider" type="range" onchange="update_e(this.value)" class="mdl-slider mdl-js-slider" min="0" max="1" value="0.9" step="0.005">
+            <input id="e-slider" type="range" onchange="update_e(this.value)" min="0" max="1" value="0.9" step="0.005">
           </span>
           <span class="property-value">
             <input id="e-spin" type="number" class="mdl-textfield__input" min="0" max="1" value="0.9" step="0.05" disabled>

@@ -96,7 +96,7 @@ var dt_slider = document.getElementById("dt-slider");
 var dt_spin= document.getElementById("dt-spin");
 
 function update_e(value) {
-    e_slider.MaterialSlider.change(value);
+    e_slider.value;
     e_spin.value = value;
     e = value;
 }
