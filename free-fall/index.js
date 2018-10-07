@@ -102,7 +102,7 @@ function update_e(value) {
 }
 
 function update_u(value) {
-    u_slider.MaterialSlider.change(value);
+    u_slider.value = value;
     u_spin.value = value;
     if (value !== u_old) { // only on change
         ball.u = value;
