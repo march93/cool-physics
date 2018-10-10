@@ -8,22 +8,47 @@
 
   <style>
     canvas {
-      margin: 20px;
+        margin: 20px;
     }
     .property {
-      margin: 10px;
-      font-size: 1.5em;
-      width: 3em;
+        margin: 10px;
+        font-size: 1.5em;
+        width: 3em;
     }
     .property-value {
-      font-size: 1.2em;
+        font-size: 1.2em;
     }
     .property, .property-value {
-      display: inline-block;
+        display: inline-block;
     }
     .page-title {
-      margin-top: 0;
-      font-family: Roboto;
+        margin-top: 0;
+        font-family: Roboto;
+    }
+    input[type=range] {
+        -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+        width: 10em; /* Specific width is required for Firefox. */
+        margin-right: 5em;
+        height: 18px;
+        background: transparent;
+        overflow: hidden;
+    }
+    input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        background: rgb(33,150,243);
+        cursor: pointer;
+        margin: -5px 0;
+    }
+    input[type=range]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 2px;
+        top: 5px;
+        cursor: pointer;
+        background: rgb(33,150,243);
+        border-radius: 1.3px;
     }
   </style>
 
